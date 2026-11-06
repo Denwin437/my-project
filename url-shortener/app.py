@@ -80,4 +80,7 @@ def create_app(db_path: str = None) -> Flask:
 
 
 if __name__ == "__main__":
-    create_app().run(debug=True)
+    # Debug mode lets anyone who can reach the server run code on it, so it is OFF by default.
+    # Enable it only on your own machine with: FLASK_DEBUG=1 python app.py
+    debug = os.environ.get("FLASK_DEBUG", "0") == "1"
+    create_app().run(host="127.0.0.1", debug=debug)

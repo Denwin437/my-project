@@ -8,6 +8,10 @@ Include the project name, the steps to reproduce, and the impact you expect.
 
 I aim to acknowledge reports within a few days.
 
+## Automated checks
+
+Every push runs `bandit` (static security analysis) and `pip-audit` (known vulnerable dependencies), and Dependabot proposes updates.
+
 ## Scope
 
 These are learning and portfolio projects. They follow good practices (parameterized SQL,
