@@ -12,6 +12,10 @@ I aim to acknowledge reports within a few days.
 
 Every push runs `bandit` (static security analysis) and `pip-audit` (known vulnerable dependencies), and Dependabot proposes updates.
 
+## Supply-chain hardening
+
+GitHub Actions are pinned to exact commit hashes, workflows run with read-only permissions and do not persist credentials, and CodeQL scans the code weekly and on every push.
+
 ## Scope
 
 These are learning and portfolio projects. They follow good practices (parameterized SQL,
