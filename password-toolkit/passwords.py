@@ -65,7 +65,11 @@ def check_strength(password: str) -> dict:
         return {"label": "empty", "entropy": 0.0, "tips": ["Enter a password"]}
     tips = []
     if password.lower() in COMMON_PASSWORDS:
-        return {"label": "very weak", "entropy": entropy_bits(password), "tips": ["This is a very common password"]}
+        return {
+            "label": "very weak",
+            "entropy": entropy_bits(password),
+            "tips": ["This is a very common password"],
+        }
     if len(password) < 12:
         tips.append("Use at least 12 characters")
     if password.lower() == password:

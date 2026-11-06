@@ -27,7 +27,8 @@ Eight self-contained projects, each with its own README, unit tests and automate
 ## Engineering practices
 
 - **Tested:** 47 unit tests, including CLI end-to-end tests and API tests with Flask's test client.
-- **Continuous integration:** GitHub Actions runs every project's tests on each push and pull request.
+- **Continuous integration:** GitHub Actions lints with ruff and runs every project's tests on Python 3.10 and 3.12 for each push and pull request.
+- **Maintained:** Dependabot updates, issue and PR templates, a security policy and a changelog.
 - **Secure by default:** cryptographically secure randomness (`secrets`), HTML escaping and URL-scheme filtering, and parameterized SQL queries.
 - **Input validation:** every CLI and API rejects bad input with clear errors instead of crashing.
 - **Minimal dependencies:** only the URL shortener needs a package (Flask); the rest use the standard library.
@@ -37,7 +38,7 @@ Eight self-contained projects, each with its own README, unit tests and automate
 
 ```text
 my-project/
-├── .github/workflows/ci.yml   # runs each project's tests
+├── .github/                   # CI workflow, Dependabot, issue and PR templates
 ├── url-shortener/
 ├── markdown-converter/
 ├── log-analyzer/
@@ -46,7 +47,9 @@ my-project/
 ├── expense-tracker/
 ├── text-analyzer/
 ├── portfolio-website/
-└── profile-readme/            # source for the GitHub profile page
+├── profile-readme/            # source for the GitHub profile page
+├── CONTRIBUTING.md · SECURITY.md · CHANGELOG.md
+└── Makefile · ruff.toml · .editorconfig
 ```
 
 ## Quick start
@@ -91,6 +94,10 @@ echo "Short sentences read fast." | python text-analyzer/analyzer.py
 - [ ] Support nested lists and tables in the Markdown converter
 - [ ] Package the CLI tools for `pip install`
 - [ ] Add a Dockerfile for the API
+
+## Contributing and security
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) to get started and [SECURITY.md](SECURITY.md) to report a vulnerability.
 
 ## License
 

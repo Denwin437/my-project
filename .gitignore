@@ -4,3 +4,4 @@ __pycache__/
 *.db
 expenses.csv
 .venv/
+.ruff_cache/
