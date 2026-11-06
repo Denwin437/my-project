@@ -29,7 +29,7 @@ def inline(text: str) -> str:
             return label  # drop unsafe schemes such as javascript:
         return f'<a href="{url.replace(chr(34), "&quot;")}">{label}</a>'
 
-    text = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", link, text)
+    text = re.sub(r"\[([^\]]+)\]\(([^()\s]*(?:\([^()\s]*\)[^()\s]*)*)\)", link, text)
     return re.sub(r"\x00(\d+)\x00", lambda m: f"<code>{codes[int(m.group(1))]}</code>", text)
 
 

@@ -5,7 +5,7 @@
 <p align="center">
   <img src="https://github.com/Denwin437/my-project/actions/workflows/ci.yml/badge.svg" alt="CI" />
   <img src="https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white" alt="Python 3.10+" />
-  <img src="https://img.shields.io/badge/tests-47%20passing-22c55e" alt="47 tests" />
+  <img src="https://img.shields.io/badge/tests-49%20passing-22c55e" alt="49 tests" />
   <img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT license" />
 </p>
 
@@ -16,7 +16,7 @@ Eight self-contained projects, each with its own README, unit tests and automate
 | Project | What it does | Stack | Tests |
 |---------|--------------|-------|:-----:|
 | [**url-shortener**](url-shortener) | REST API that shortens URLs, redirects and counts clicks | Flask · SQLite | 5 |
-| [**markdown-converter**](markdown-converter) | Markdown → HTML converter written from scratch, safe against HTML injection | Python | 10 |
+| [**markdown-converter**](markdown-converter) | Markdown → HTML converter written from scratch, safe against HTML injection | Python | 12 |
 | [**log-analyzer**](log-analyzer) | Summarizes web server logs: status codes, error rate, top IPs and paths | Python | 6 |
 | [**password-toolkit**](password-toolkit) | Secure password and passphrase generator with a strength checker | Python · `secrets` | 8 |
 | [**task-tracker-cli**](task-tracker-cli) | Command-line to-do manager with priorities | Python | 6 |
@@ -26,7 +26,7 @@ Eight self-contained projects, each with its own README, unit tests and automate
 
 ## Engineering practices
 
-- **Tested:** 47 unit tests, including CLI end-to-end tests and API tests with Flask's test client.
+- **Tested:** 49 unit tests, including CLI end-to-end tests and API tests with Flask's test client.
 - **Continuous integration:** GitHub Actions lints with ruff and runs every project's tests on Python 3.10 and 3.12 for each push and pull request.
 - **Maintained:** Dependabot updates, issue and PR templates, a security policy and a changelog.
 - **Secure by default:** cryptographically secure randomness (`secrets`), HTML escaping and URL-scheme filtering, and parameterized SQL queries.

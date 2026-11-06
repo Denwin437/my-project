@@ -50,3 +50,12 @@ def test_cli_writes_file(tmp_path):
     src.write_text("# Hi", encoding="utf-8")
     assert md2html.main([str(src), "-o", str(dst)]) == 0
     assert dst.read_text(encoding="utf-8").strip() == "<h1>Hi</h1>"
+
+
+def test_unsafe_link_leaves_only_the_label():
+    assert md2html.convert("[bad](javascript:alert(1)) end") == "<p>bad end</p>"
+
+
+def test_link_with_parentheses_in_url():
+    out = md2html.convert("[w](https://en.wikipedia.org/wiki/Python_(language))")
+    assert out == '<p><a href="https://en.wikipedia.org/wiki/Python_(language)">w</a></p>'
