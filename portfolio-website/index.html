@@ -4,26 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Denwin437 | Python Developer Portfolio</title>
-  <meta name="description" content="Portfolio of Denwin437: projects, skills and contact details.">
+  <meta name="description" content="Portfolio of Denwin437: tested Python tools and web APIs, with source code on GitHub.">
+  <meta name="theme-color" content="#0b1220">
+  <meta property="og:title" content="Denwin437 | Python Developer Portfolio">
+  <meta property="og:description" content="Tested Python tools and web APIs, with source code on GitHub.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1220'/%3E%3Ctext x='32' y='43' font-family='monospace' font-size='30' font-weight='700' text-anchor='middle' fill='%2338bdf8'%3E%26lt;/%26gt;%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
-    <h1>Hi, I'm Denwin437</h1>
-    <p>Python developer building small, tested tools and web APIs.</p>
-    <a class="button" href="#projects">See my work</a>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <nav class="nav" aria-label="Primary">
+    <a class="brand" href="#top">Denwin437</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="top">
+    <p class="eyebrow">Python developer</p>
+    <h1>I build small, tested tools <br>and web APIs.</h1>
+    <p class="lead">Every project here has unit tests, automated checks on each push, and a README you can follow in minutes.</p>
+    <div class="actions">
+      <a class="button primary" href="#projects">See my work</a>
+      <a class="button ghost" href="https://github.com/Denwin437" rel="noopener noreferrer">GitHub profile</a>
+    </div>
+    <ul class="stats" aria-label="Portfolio at a glance">
+      <li><strong>8</strong><span>projects</span></li>
+      <li><strong>49</strong><span>unit tests</span></li>
+      <li><strong>CI</strong><span>on every push</span></li>
+    </ul>
   </header>
 
-  <main>
+  <main id="main">
     <section id="about">
       <h2>About</h2>
-      <p>I build small command-line tools and web APIs in Python, and I write unit tests and set up automated CI for each one. Below are projects you can run and read, from a Flask REST API to a Markdown converter written from scratch.</p>
+      <p>I build command-line tools and web APIs in Python, and I write unit tests and set up automated checks for each one. The projects below range from a Flask REST API to a Markdown converter written from scratch, with attention to input validation and security basics such as escaping untrusted input and using parameterized SQL.</p>
     </section>
 
     <section id="skills">
       <h2>Skills</h2>
       <ul class="tags">
-        <li>Python</li><li>JavaScript</li><li>HTML/CSS</li><li>Git</li><li>SQL</li><li>Flask</li>
+        <li>Python</li><li>Flask</li><li>REST APIs</li><li>SQL / SQLite</li><li>pytest</li>
+        <li>Git &amp; GitHub</li><li>GitHub Actions</li><li>HTML &amp; CSS</li><li>Regular expressions</li>
       </ul>
     </section>
 
@@ -31,46 +58,60 @@
       <h2>Projects</h2>
       <div class="cards">
         <article class="card">
-          <h3>Task Tracker CLI</h3>
-          <p>Command-line to-do manager with priorities and JSON storage.</p>
-          <a href="https://github.com/Denwin437/my-project/tree/main/task-tracker-cli">View on GitHub</a>
-        </article>
-        <article class="card">
-          <h3>Expense Tracker</h3>
-          <p>Log spending to CSV and summarize by category or month.</p>
-          <a href="https://github.com/Denwin437/my-project/tree/main/expense-tracker">View on GitHub</a>
-        </article>
-        <article class="card">
           <h3>URL Shortener</h3>
-          <p>Flask + SQLite REST API with click tracking.</p>
-          <a href="https://github.com/Denwin437/my-project/tree/main/url-shortener">View on GitHub</a>
-        </article>
-        <article class="card">
-          <h3>Text Analyzer</h3>
-          <p>Word stats, reading time and readability score for any text.</p>
-          <a href="https://github.com/Denwin437/my-project/tree/main/text-analyzer">View on GitHub</a>
+          <p>REST API that shortens URLs, redirects, and counts clicks.</p>
+          <ul class="meta"><li>Flask</li><li>SQLite</li><li>5 tests</li></ul>
+          <a href="https://github.com/Denwin437/my-project/tree/main/url-shortener" rel="noopener noreferrer">View source <span aria-hidden="true">→</span></a>
         </article>
         <article class="card">
           <h3>Markdown Converter</h3>
-          <p>Markdown to HTML converter built from scratch, safe against XSS.</p>
-          <a href="https://github.com/Denwin437/my-project/tree/main/markdown-converter">View on GitHub</a>
+          <p>Markdown to HTML converter built from scratch, safe against HTML injection.</p>
+          <ul class="meta"><li>Python</li><li>Regex</li><li>12 tests</li></ul>
+          <a href="https://github.com/Denwin437/my-project/tree/main/markdown-converter" rel="noopener noreferrer">View source <span aria-hidden="true">→</span></a>
         </article>
         <article class="card">
           <h3>Log Analyzer</h3>
-          <p>Summarizes web server access logs: status codes, top IPs and paths.</p>
-          <a href="https://github.com/Denwin437/my-project/tree/main/log-analyzer">View on GitHub</a>
+          <p>Summarizes web server logs: status codes, error rate, top IPs and paths.</p>
+          <ul class="meta"><li>Python</li><li>CLI</li><li>6 tests</li></ul>
+          <a href="https://github.com/Denwin437/my-project/tree/main/log-analyzer" rel="noopener noreferrer">View source <span aria-hidden="true">→</span></a>
         </article>
         <article class="card">
           <h3>Password Toolkit</h3>
-          <p>Secure password generator and strength checker.</p>
-          <a href="https://github.com/Denwin437/my-project/tree/main/password-toolkit">View on GitHub</a>
+          <p>Secure password and passphrase generator with a strength checker.</p>
+          <ul class="meta"><li>Python</li><li>secrets</li><li>8 tests</li></ul>
+          <a href="https://github.com/Denwin437/my-project/tree/main/password-toolkit" rel="noopener noreferrer">View source <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="card">
+          <h3>Task Tracker CLI</h3>
+          <p>Command-line to-do manager with priorities and JSON storage.</p>
+          <ul class="meta"><li>Python</li><li>CLI</li><li>6 tests</li></ul>
+          <a href="https://github.com/Denwin437/my-project/tree/main/task-tracker-cli" rel="noopener noreferrer">View source <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="card">
+          <h3>Expense Tracker</h3>
+          <p>Logs spending to CSV and summarizes it by category or month.</p>
+          <ul class="meta"><li>Python</li><li>CSV</li><li>5 tests</li></ul>
+          <a href="https://github.com/Denwin437/my-project/tree/main/expense-tracker" rel="noopener noreferrer">View source <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="card">
+          <h3>Text Analyzer</h3>
+          <p>Word statistics, reading time and a readability score for any text.</p>
+          <ul class="meta"><li>Python</li><li>CLI</li><li>7 tests</li></ul>
+          <a href="https://github.com/Denwin437/my-project/tree/main/text-analyzer" rel="noopener noreferrer">View source <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="card">
+          <h3>This Website</h3>
+          <p>Responsive, accessible portfolio in plain HTML and CSS with no dependencies.</p>
+          <ul class="meta"><li>HTML</li><li>CSS</li><li>Responsive</li></ul>
+          <a href="https://github.com/Denwin437/my-project/tree/main/portfolio-website" rel="noopener noreferrer">View source <span aria-hidden="true">→</span></a>
         </article>
       </div>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
-      <p><a href="https://github.com/Denwin437">github.com/Denwin437</a></p>
+      <p>The best way to reach me right now is through GitHub. Open an issue or follow along as I add more projects.</p>
+      <p><a class="button primary" href="https://github.com/Denwin437" rel="noopener noreferrer">github.com/Denwin437</a></p>
     </section>
   </main>
 
