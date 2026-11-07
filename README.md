@@ -1,13 +1,6 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:38bdf8&height=160&section=header&text=Python%20Projects%20Portfolio&fontSize=38&fontColor=ffffff&fontAlignY=40&desc=Small%2C%20tested%2C%20production-style%20tools&descSize=16&descAlignY=62" alt="Python Projects Portfolio" />
-</p>
+# Python Projects
 
-<p align="center">
-  <img src="https://github.com/Denwin437/my-project/actions/workflows/ci.yml/badge.svg" alt="CI" />
-  <img src="https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white" alt="Python 3.10+" />
-  <img src="https://img.shields.io/badge/tests-49%20passing-22c55e" alt="49 tests" />
-  <img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT license" />
-</p>
+<img src="https://github.com/Denwin437/my-project/actions/workflows/ci.yml/badge.svg" alt="CI" /> <img src="https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white" alt="Python 3.10+" /> <img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT license" />
 
 Eight self-contained projects, each with its own README, unit tests and automated CI. They cover command-line tools, a REST API, text and log processing, and security-minded input handling.
 
@@ -78,15 +71,7 @@ echo "Short sentences read fast." | python text-analyzer/analyzer.py
 
 ## Tech stack
 
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" alt="Flask" />
-  <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite" />
-  <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white" alt="pytest" />
-  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3" />
-</p>
+Python, Flask, SQLite, pytest, ruff, GitHub Actions, CodeQL, HTML and CSS.
 
 ## Roadmap
 
