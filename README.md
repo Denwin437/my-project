@@ -2,7 +2,7 @@
 
 <img src="https://github.com/Denwin437/my-project/actions/workflows/ci.yml/badge.svg" alt="CI" /> <img src="https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white" alt="Python 3.10+" /> <img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT license" />
 
-Eight self-contained projects, each with its own README, unit tests and automated CI. They cover command-line tools, a REST API, text and log processing, and security-minded input handling.
+Eleven self-contained projects, each with its own README, unit tests and automated CI. They cover command-line tools, a REST API, text and log processing, and security-minded input handling.
 
 ## Projects
 
@@ -16,16 +16,18 @@ Eight self-contained projects, each with its own README, unit tests and automate
 | [**expense-tracker**](expense-tracker) | Logs spending to CSV and summarizes by category or month | Python | 5 |
 | [**text-analyzer**](text-analyzer) | Word statistics, reading time and a readability score | Python | 7 |
 | [**file-organizer**](file-organizer) | Sorts a folder by file type or month, with dry-run and undo; never overwrites | Python | 31 |
+| [**student-management**](student-management) | REST API for student records with search, filters, pagination and stats | FastAPI · SQLite | 18 |
+| [**qr-generator**](qr-generator) | QR codes for text, links, Wi-Fi and contacts as PNG or SVG | Python · qrcode | 17 |
 | [**portfolio-website**](portfolio-website) | Responsive dark-theme personal site | HTML · CSS | n/a |
 
 ## Engineering practices
 
-- **Tested:** 49 unit tests, including CLI end-to-end tests and API tests with Flask's test client.
+- **Tested:** 115 automated tests, including CLI end-to-end tests and API tests with Flask's test client.
 - **Continuous integration:** GitHub Actions lints with ruff and runs every project's tests on Python 3.10 and 3.12 for each push and pull request.
 - **Maintained:** Dependabot updates, issue and PR templates, a security policy and a changelog.
 - **Secure by default:** cryptographically secure randomness (`secrets`), HTML escaping and URL-scheme filtering, and parameterized SQL queries.
 - **Input validation:** every CLI and API rejects bad input with clear errors instead of crashing.
-- **Minimal dependencies:** only the URL shortener needs a package (Flask); the rest use the standard library.
+- **Minimal dependencies:** only the URL shortener, student API and QR generator need packages (Flask, FastAPI, qrcode); the rest use the standard library.
 - **Documented:** each project explains usage, how to run its tests, and its known limitations.
 
 ## Repository layout
@@ -41,6 +43,8 @@ my-project/
 ├── expense-tracker/
 ├── text-analyzer/
 ├── file-organizer/
+├── student-management/
+├── qr-generator/
 ├── portfolio-website/
 ├── profile-readme/            # source for the GitHub profile page
 ├── CONTRIBUTING.md · SECURITY.md · CHANGELOG.md
@@ -73,7 +77,7 @@ echo "Short sentences read fast." | python text-analyzer/analyzer.py
 
 ## Tech stack
 
-Python, Flask, SQLite, pytest, ruff, GitHub Actions, CodeQL, HTML and CSS.
+Python, Flask, FastAPI, SQLite, pytest, ruff, GitHub Actions, CodeQL, HTML and CSS.
 
 ## Roadmap
 
