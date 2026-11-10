@@ -1,4 +1,4 @@
-PROJECTS := task-tracker-cli expense-tracker url-shortener text-analyzer password-toolkit markdown-converter log-analyzer
+PROJECTS := task-tracker-cli expense-tracker url-shortener text-analyzer password-toolkit markdown-converter log-analyzer file-organizer
 
 .PHONY: test lint all
 
