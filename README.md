@@ -15,6 +15,7 @@ Eight self-contained projects, each with its own README, unit tests and automate
 | [**task-tracker-cli**](task-tracker-cli) | Command-line to-do manager with priorities | Python | 6 |
 | [**expense-tracker**](expense-tracker) | Logs spending to CSV and summarizes by category or month | Python | 5 |
 | [**text-analyzer**](text-analyzer) | Word statistics, reading time and a readability score | Python | 7 |
+| [**file-organizer**](file-organizer) | Sorts a folder by file type or month, with dry-run and undo; never overwrites | Python | 31 |
 | [**portfolio-website**](portfolio-website) | Responsive dark-theme personal site | HTML · CSS | n/a |
 
 ## Engineering practices
@@ -39,6 +40,7 @@ my-project/
 ├── task-tracker-cli/
 ├── expense-tracker/
 ├── text-analyzer/
+├── file-organizer/
 ├── portfolio-website/
 ├── profile-readme/            # source for the GitHub profile page
 ├── CONTRIBUTING.md · SECURITY.md · CHANGELOG.md

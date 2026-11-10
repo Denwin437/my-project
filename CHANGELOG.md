@@ -2,6 +2,11 @@
 
 All notable changes are listed here. Format based on [Keep a Changelog](https://keepachangelog.com).
 
+## [Unreleased]
+### Added
+- file-organizer: sorts folders by type or month with dry-run, undo and no-overwrite
+  guarantees; 31 tests, added to the CI matrix and Makefile.
+
 ## [1.0.1] - 2026-11-07
 ### Security
 - URL shortener: debug mode is now off by default and the server binds to 127.0.0.1.
